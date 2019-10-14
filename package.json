@@ -1,0 +1,29 @@
+{
+  "name": "warlock-config",
+  "version": "1.0.0",
+  "description": "An eslint, prettier, husky, and lint-staged shareable config.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaemonIsland/warlock-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "prettier",
+    "husky",
+    "lint-staged",
+    "config",
+    "shareable",
+    "linting",
+    "lint"
+  ],
+  "author": "Kaemon Lovendahl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaemonIsland/warlock-config/issues"
+  },
+  "homepage": "https://github.com/KaemonIsland/warlock-config#readme"
+}
