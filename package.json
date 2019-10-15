@@ -1,14 +1,17 @@
 {
-  "name": "warlock-config",
+  "name": "eslint-config-warlock",
   "version": "1.0.0",
   "description": "An eslint, prettier, husky, and lint-staged shareable config.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "warlock-config-setup": "./bin/setup.sh"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KaemonIsland/warlock-config.git"
+    "url": "git+https://github.com/KaemonIsland/eslint-config-warlock.git"
   },
   "keywords": [
     "eslint",
@@ -23,7 +26,22 @@
   "author": "Kaemon Lovendahl",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KaemonIsland/warlock-config/issues"
+    "url": "https://github.com/KaemonIsland/eslint-config-warlock/issues"
   },
-  "homepage": "https://github.com/KaemonIsland/warlock-config#readme"
+  "peerDependencies": {
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.1"
+  },
+  "dependencies": {
+    "eslint": "^6.5.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2"
+  }
 }
