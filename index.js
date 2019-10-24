@@ -33,10 +33,10 @@ module.exports = {
       "depth": 3,
     }],
     "react/jsx-fragments": [2, "syntax"],
-    "react/jsx-curly-newline": {
+    "react/jsx-curly-newline": [2, {
       multiline: "consistent",
       singleline: "consistent" 
-    },
+    }],
     "react/state-in-constructor": [2, "never"],
     "react/static-property-placement": [2],
     "react/jsx-props-no-spreading": [{
