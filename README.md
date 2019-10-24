@@ -4,7 +4,7 @@
 
 Simply download this package as a devDependency with `yarn add -D eslint-config-warlock`.
 
-Once it's downloaded run the command `yarn warlock-config-setup` This will install all of the required devDependencies for ever thing to run correctly. This command will also create eslint/prettier/husky config files if they aren't already present within your project. For now eslint will use the [airbnb eslint config](https://www.npmjs.com/package/eslint-config-airbnb) until I find that I need to add additional rules.
+Once it's downloaded run the command `yarn warlock-config-setup` This command will create eslint/prettier/husky config files if they aren't already present within your project. For now eslint will use the [airbnb eslint config](https://www.npmjs.com/package/eslint-config-airbnb) until I find that I need to add additional rules.
 
 Husky/lint-staged work together to provide git-hooks. Here are the following hooks/commands that are called:
 
@@ -14,7 +14,7 @@ Husky/lint-staged work together to provide git-hooks. Here are the following hoo
 
 More hooks will be added soon
 
-devDependencies:
+dependencies:
 
 * [eslint](https://eslint.org/)
 * [eslint-config-prettier](https://prettier.io/docs/en/integrating-with-linters.html#use-eslint-to-run-prettier)
