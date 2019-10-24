@@ -39,7 +39,7 @@ module.exports = {
     }],
     "react/state-in-constructor": [2, "never"],
     "react/static-property-placement": [2],
-    "react/jsx-props-no-spreading": [{
+    "react/jsx-props-no-spreading": [2, {
       "html": "ignore",
       "custom": "ignore",
       "explicitSpread": "ignore",
