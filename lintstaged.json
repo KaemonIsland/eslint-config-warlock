@@ -1,7 +1,0 @@
-{
-  "*.{js,jsx}": [
-    "prettier --write",
-    "git add",
-    "eslint --ext .jsx --ext .js --ignore-path .gitignore"
-  ]
-}

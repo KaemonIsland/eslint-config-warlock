@@ -1,26 +1,20 @@
 # eslint-config-warlock
 
+## Opinions
+
+Eslint should be used to prevent coding errors while writing code before they become in production. This set of rules are set with the mindset of finding errors, not yelling at you when something should go on a new line.
+
+For right now, I'm going with most of the recommended settings. They will be changed as-needed in future versions.
+
 ## Getting Started
 
-Simply download this package as a devDependency with `yarn add -D eslint-config-warlock`.
+Simply download this package as a devDependency with `yarn add -D eslint-config-warlock`. Then add "warlock" to "extends" within a `.eslintrc` file. It should look like this:
 
-Once it's downloaded run the command `yarn warlock-config-setup` This command will create eslint/prettier/husky config files if they aren't already present within your project. For now eslint will use the [airbnb eslint config](https://www.npmjs.com/package/eslint-config-airbnb) until I find that I need to add additional rules.
-
-Husky/lint-staged work together to provide git-hooks. Here are the following hooks/commands that are called:
-
-### pre-commit
-* prettier - writes all js/jsx files and adds them to stage
-* eslint - lints the staged files and exits if there are any errors
-
-More hooks will be added soon
-
-dependencies:
-
-* [eslint](https://eslint.org/)
-* [eslint-config-prettier](https://prettier.io/docs/en/integrating-with-linters.html#use-eslint-to-run-prettier)
-* [prettier](https://prettier.io/)
-* [husky](https://github.com/typicode/husky)
-* [lint-staged](https://github.com/okonet/lint-staged)
+```javascript
+{
+  "extends": ["warlock"]
+}
+```
 
 ## If you already have config files setup
 

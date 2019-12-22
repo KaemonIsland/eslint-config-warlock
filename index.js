@@ -1,35 +1,35 @@
 module.exports = {
-  "extends": ["airbnb"],
-  "plugins": [
-    "prettier",
-    "jsx-a11y",
-    "import",
-    "react",
-    "react-hooks"
+  plugins: ["jsx-a11y", "import", "react", "react-hooks"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended"
   ],
-  "rules": {
-    "semi": [2, "never"],
-    "linebreak-style": 0,
-    "import/prefer-default-export": 0,
-    "react/require-default-props": 0,
-    "arrow-parens": [2, "as-needed"],
-    "react/jsx-one-expression-per-line": 0,
-    "no-confusing-arrow": 0,
-    "react/jsx-props-no-spreading": 0
+  rules: {
+    // ESLINT
+
+    // Warn on use of console
+    "no-console": 1,
+
+    // allow empty block statements
+    "no-empty": 0,
+
+    // React-hooks
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
-  "env": {
-    "browser": true,
-    "es6": true,
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+    es2020: true
   },
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-        "jsx": true
-      },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-}
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    sourceType: "module"
+  }
+};
