@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-warlock",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An opinionated eslint config.",
   "main": "index.js",
   "repository": {
